@@ -1,0 +1,57 @@
+
+echo --Welcome to the Fedora Base Install Set--
+echo --
+echo --
+
+echo _____Nextcloud Client_____
+sudo dnf install nextcloud-client 
+echo _____Nextcloud Client Finished_____
+
+echo _____Emacs_____
+sudo dnf install emacs 
+echo _____Emacs Finished_____
+
+echo _____Timeshift_____
+sudo dnf install timeshift-18.6.1-2.fc29.x86_64 
+echo _____Timeshift Finished_____
+
+echo _____DejaDup_____
+sudo dnf install deja-dup
+echo _____DejaDup Finished_____
+
+echo _____Libre Office_____
+sudo dnf install libreoffice
+echo _____Libre Office Finished_____
+
+echo _____Git_____
+sudo dnf install git
+echo _____Git Finished_____
+
+echo _____Thunderbird_____
+sudo dnf install thunderbird
+echo _____Thunderbird Finished_____
+
+echo _____KeepassXC_____
+sudo dnf install keepassxc
+echo _____KeepassXC Finished_____
+
+echo _____Rpm-Fusion_____
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+echo _____Rpm-Fusion Finished_____
+
+echo _____Exfat_____
+sudo dnf install fuse-exfat
+echo _____Exfat Installed_____
+
+echo _____VLC_____
+sudo dnf install vlc
+echo _____VLC Finished_____
+
+
+echo 
+echo --!
+echo ___
+echo You Should Install RPM Fusion and fuse-exfat to be able to work with exfat USB-drives
+echo ___
+echo --!
+echo --Install Set Finished--
